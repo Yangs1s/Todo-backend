@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/api", indexRouter);
 
-mongoose.connect(`${MONGO_URI}/todo-demo`).catch((err) => {
+mongoose.connect(MONGO_URI).catch((err) => {
   console.error("MongoDB connection error:", err);
 });
 
