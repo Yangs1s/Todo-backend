@@ -7,7 +7,6 @@ require("dotenv").config();
 const MONGO_URI = process.env.MONGO_URI;
 const app = express();
 
-console.log("MONGO_URI :", MONGO_URI);
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/api", indexRouter);
